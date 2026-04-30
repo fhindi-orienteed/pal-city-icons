@@ -1,0 +1,28 @@
+{
+  "name": "pal-city-icons",
+  "version": "1.0.0",
+  "description": "Shared icon library for Pal-City Web and Mobile",
+  "main": "dist/web/index.js",
+  "types": "dist/web/index.d.ts",
+  "react-native": "dist/native/index.js",
+  "scripts": {
+    "clean": "rmdir /s /q src dist 2>nul || exit 0",
+    "generate:web": "svgr --out-dir src/web --icon --typescript -- svgs",
+    "generate:native": "svgr --out-dir src/native --icon --typescript --native -- svgs",
+    "generate": "npm run generate:web && npm run generate:native",
+    "build": "npm run clean && npm run generate && tsc"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*",
+    "react-native-svg": "*"
+  },
+  "devDependencies": {
+    "@svgr/cli": "^8.1.0",
+    "@types/react": "^18.2.0",
+    "react": "^18.2.0",
+    "react-native": "^0.72.0",
+    "react-native-svg": "^14.1.0",
+    "typescript": "^5.2.2"
+  }
+}
