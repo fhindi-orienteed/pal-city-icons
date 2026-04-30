@@ -10,8 +10,14 @@
     "generate:web": "svgr --out-dir src/web --icon --typescript -- svgs",
     "generate:native": "svgr --out-dir src/native --icon --typescript --native -- svgs",
     "generate": "npm run generate:web && npm run generate:native",
-    "build": "npm run clean && npm run generate && tsc"
+    "build": "npm run clean && npm run generate && tsc",
+    "prepublishOnly": "npm run build"
   },
+  "files": [
+    "dist",
+    "src",
+    "svgs"
+  ],
   "peerDependencies": {
     "react": "*",
     "react-native": "*",
