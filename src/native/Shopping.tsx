@@ -2,13 +2,7 @@ import * as React from "react";
 import Svg, { Path, G, Circle } from "react-native-svg";
 import type { SvgProps } from "react-native-svg";
 const SvgShopping = (props: SvgProps) => (
-  <Svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={24}
-    height={24}
-    viewBox="0 0 48 48"
-    {...props}
-  >
+  <Svg width={24} height={24} viewBox="0 0 48 48" {...props}>
     <Path fill="none" d="M0 0h48v48H0z" />
     <G fill="none">
       <Path d="M39 32H13L8 12h36z" />

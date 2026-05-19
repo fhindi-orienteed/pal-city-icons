@@ -1,6 +1,6 @@
 {
   "name": "pal-city-icons",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Shared icon library for Pal-City Web and Mobile",
   "main": "dist/web/index.js",
   "types": "dist/web/index.d.ts",
@@ -8,7 +8,7 @@
   "scripts": {
     "clean": "rmdir /s /q src dist 2>nul || exit 0",
     "generate:web": "svgr --out-dir src/web --icon --typescript -- svgs",
-    "generate:native": "svgr --out-dir src/native --icon --typescript --native -- svgs",
+    "generate:native": "svgr --config-file .svgrrc.native.js --out-dir src/native --icon --typescript --native -- svgs",
     "generate": "npm run generate:web && npm run generate:native && node scripts/generate-wrappers.js",
     "build": "npm run clean && npm run generate && tsc",
     "prepublishOnly": "npm run build"
