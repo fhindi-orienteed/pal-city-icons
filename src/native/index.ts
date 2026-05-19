@@ -1,6 +1,26 @@
+export { default as Bank } from "./Bank";
+export { default as Chat } from "./Chat";
+export { default as Education } from "./Education";
 export { default as ExploreOutline } from "./ExploreOutline";
+export { default as Food } from "./Food";
+export { default as Government } from "./Government";
 export { default as Grid } from "./Grid";
+export { default as Health } from "./Health";
+export { default as Help } from "./Help";
 export { default as Home } from "./Home";
+export { default as Hotel } from "./Hotel";
+export { default as Info } from "./Info";
+export { default as Legal } from "./Legal";
+export { default as Location } from "./Location";
+export { default as Login } from "./Login";
+export { default as Logout } from "./Logout";
+export { default as Notification } from "./Notification";
 export { default as Search } from "./Search";
+export { default as Security } from "./Security";
+export { default as Settings } from "./Settings";
+export { default as Share } from "./Share";
+export { default as Shopping } from "./Shopping";
+export { default as Transportation } from "./Transportation";
+export { default as Travel } from "./Travel";
 
 export * from './PalCityIcon';
